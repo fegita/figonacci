@@ -43,7 +43,7 @@ namespace Figonacci
                         }
                         else
                         {
-                            Console.WriteLine("el numero mas cercano es  " + a);
+                            Console.WriteLine("el numero mas cercano fue " + a);
                         }
                     }
                 }
