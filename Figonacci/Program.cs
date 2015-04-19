@@ -13,21 +13,24 @@ namespace Figonacci
             int a=1;
             int b=1;
             int c;
+            //se lee el numero
             Console.WriteLine("ingrese un numero");
             string snum = Console.ReadLine();
             int d = Convert.ToInt16(snum );
       
-            //Console.WriteLine(f1);
-            //Console.WriteLine(f2);
-            ///
 
+            //ciclo para calcular figonacci y comparar d
             for (int i = 1; d > b; i++)
             {
+                //calculamos el sigueinte figonacci
+                //rescatamos el valor de b
                 c = b;
                 b = a + b;
+                
                 a = c;
 
-                if (d == b)
+                //comparamos si es figonacci
+                if (d == b)// si es igual al numero calculado
                 {
                     Console.WriteLine(d + "  es un numero figonacci");
                 } else  if (d < b)
